@@ -1,5 +1,7 @@
 body {
 
-  background: #837960 url("https://static.vecteezy.com/system/resources/previews/005/701/419/original/abstract-digital-background-with-technology-circuit-board-texture-electronic-motherboard-illustration-communication-and-engineering-concept-illustration-free-vector.jpg") 0 0 no-repeat;
-  /* background-image: url("https://static.vecteezy.com/system/resources/previews/005/701/419/original/abstract-digital-background-with-technology-circuit-board-texture-electronic-motherboard-illustration-communication-and-engineering-concept-illustration-free-vector.jpg"); */
+  background: #837960 url("https://static.vecteezy.com/system/resources/previews/005/701/419/original/abstract-digital-background-with-technology-circuit-board-texture-electronic-motherboard-illustration-communication-and-engineering-concept-illustration-free-vector.jpg") no-repeat center fixed;
+  
+  background-size: cover;
+
 }
