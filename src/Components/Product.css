@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    border-radius: 5px;
+    height: 8rem;
+    width: 25rem;
+    align-items: center;
+    /* flex: 1 1 1; */
+    /* flex-basis: 30%; */
+    margin: 2px; 
+  }
+
+  .card img{
+    height: 7rem;
+    
+  } 
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 150px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+  }
+
+  h4{
+    margin-right: 50px;
+  }
