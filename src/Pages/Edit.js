@@ -4,7 +4,7 @@ import ProductEditForm from "../Components/ProductEditForm";
 const Edit = () => {
   return (
     <div className="edit-page">
-      <h1 className="edit-h1">Edit Snack</h1>
+      <h1 className="edit-h1">Edit Product</h1>
       <ProductEditForm />
     </div>
   );

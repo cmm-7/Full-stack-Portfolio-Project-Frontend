@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
+import "./ProductEditForm.css";
+
 const ProductEditForm = () => {
   const API = process.env.REACT_APP_API_URL;
   let { id } = useParams();
@@ -32,7 +34,8 @@ const ProductEditForm = () => {
   };
 
   useEffect(() => {
-    axios.get(`${API}/products/${id}`).then(
+    axios.get(`${API}/products/${id}`)
+    .then(
       (res) => setEdit(res.data),
       (error) => navigate(`/not-found`)
     );
@@ -42,7 +45,7 @@ const ProductEditForm = () => {
     e.preventDefault();
     updateProduct(edit, id);
   };
-  
+
   return (
     <div className="Edit">
       <form onSubmit={handleSubmit}>
@@ -82,7 +85,7 @@ const ProductEditForm = () => {
         <input
           id="type"
           type="text"
-          name="add_sugar"
+          name="type"
           onChange={handleText}
           value={edit.type}
         />
@@ -103,7 +106,6 @@ const ProductEditForm = () => {
         <input
           classname="edit-submit"
           type="submit"
-          style={{ color: " rgba(237, 240, 15, 0.883)" }}
         />
       </form>
       <Link to={`/products/${id}`}>
