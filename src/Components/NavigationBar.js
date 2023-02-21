@@ -1,4 +1,5 @@
 import React from "react";
+import {Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -12,8 +13,8 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/products">All Products</Nav.Link>
-            <Nav.Link href="products/new">Sell Products</Nav.Link>
+            <Link className="nav-link" to="/products">All Products</Link>
+            <Link className="nav-link"  to="/products/new">Sell Products</Link>
             <NavDropdown
               title="Desktop Components"
               id="collasible-nav-dropdown"
@@ -45,7 +46,7 @@ const NavigationBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Cart</Nav.Link>
+            <Link href="#deets">Cart</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
